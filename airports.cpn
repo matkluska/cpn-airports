@@ -764,7 +764,7 @@
         <placeend idref="ID1412353382"/>
         <annot id="ID1412371108">
           <posattr x="-326.000000"
-                   y="53.000000"/>
+                   y="50.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -795,8 +795,8 @@
         <transend idref="ID1412365740"/>
         <placeend idref="ID1412353756"/>
         <annot id="ID1412371109">
-          <posattr x="-153.000000"
-                   y="-38.000000"/>
+          <posattr x="-177.000000"
+                   y="-43.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -859,8 +859,8 @@
         <transend idref="ID1412366512"/>
         <placeend idref="ID1412362552"/>
         <annot id="ID1412371111">
-          <posattr x="-56.000000"
-                   y="302.000000"/>
+          <posattr x="-53.000000"
+                   y="308.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -891,8 +891,8 @@
         <transend idref="ID1412366512"/>
         <placeend idref="ID1412362202"/>
         <annot id="ID1412371112">
-          <posattr x="153.000000"
-                   y="332.000000"/>
+          <posattr x="169.000000"
+                   y="318.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -987,8 +987,8 @@
         <transend idref="ID1412366783"/>
         <placeend idref="ID1412362285"/>
         <annot id="ID1412371115">
-          <posattr x="194.000000"
-                   y="67.000000"/>
+          <posattr x="204.000000"
+                   y="54.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -1051,8 +1051,8 @@
         <transend idref="ID1412366783"/>
         <placeend idref="ID1412353857"/>
         <annot id="ID1412371117">
-          <posattr x="132.000000"
-                   y="-105.000000"/>
+          <posattr x="105.000000"
+                   y="-112.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -1488,7 +1488,7 @@ for landing</text>
       </place>
       <trans id="ID1412470211"
              explicit="false">
-        <posattr x="-484.000000"
+        <posattr x="-546.000000"
                  y="546.000000"/>
         <fillattr colour="White"
                   pattern=""
@@ -1505,7 +1505,7 @@ airspace in</text>
         <binding x="7.200000"
                  y="-3.000000"/>
         <cond id="ID1412470212">
-          <posattr x="-537.000000"
+          <posattr x="-599.000000"
                    y="574.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
@@ -1519,7 +1519,7 @@ airspace in</text>
                 version="4.0.1"/>
         </cond>
         <time id="ID1412470213">
-          <posattr x="-425.500000"
+          <posattr x="-487.500000"
                    y="574.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
@@ -1533,7 +1533,7 @@ airspace in</text>
                 version="4.0.1"/>
         </time>
         <code id="ID1412470214">
-          <posattr x="-405.500000"
+          <posattr x="-467.500000"
                    y="497.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
@@ -1547,7 +1547,7 @@ airspace in</text>
                 version="4.0.1"/>
         </code>
         <priority id="ID1412470216">
-          <posattr x="-566.000000"
+          <posattr x="-628.000000"
                    y="518.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
@@ -1891,26 +1891,27 @@ airspace out</text>
                 version="4.0.1"/>
         </priority>
       </trans>
-      <arc id="ID1412476071"
-           orientation="PtoT"
-           order="1">
-        <posattr x="0.000000"
-                 y="0.000000"/>
+      <trans id="ID1412624571"
+             explicit="false">
+        <posattr x="-420.000000"
+                 y="546.000000"/>
         <fillattr colour="White"
                   pattern=""
                   filled="false"/>
         <lineattr colour="Black"
                   thick="1"
-                  type="Solid"/>
+                  type="solid"/>
         <textattr colour="Black"
                   bold="false"/>
-        <arrowattr headsize="1.200000"
-                   currentcyckle="2"/>
-        <transend idref="ID1412470211"/>
-        <placeend idref="ID1412366544"/>
-        <annot id="ID1412476072">
-          <posattr x="-443.500000"
-                   y="604.000000"/>
+        <text>Airport
+airspace in</text>
+        <box w="88.000000"
+             h="34.000000"/>
+        <binding x="7.200000"
+                 y="-3.000000"/>
+        <cond id="ID1412624572">
+          <posattr x="-473.000000"
+                   y="574.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -1920,9 +1921,51 @@ airspace out</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="4.0.1">k</text>
-        </annot>
-      </arc>
+                version="4.0.1"/>
+        </cond>
+        <time id="ID1412624573">
+          <posattr x="-361.500000"
+                   y="574.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.1"/>
+        </time>
+        <code id="ID1412624574">
+          <posattr x="-341.500000"
+                   y="497.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.1"/>
+        </code>
+        <priority id="ID1412624576">
+          <posattr x="-502.000000"
+                   y="518.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.1"/>
+        </priority>
+      </trans>
       <arc id="ID1412479917"
            orientation="TtoP"
            order="1">
@@ -1941,8 +1984,8 @@ airspace out</text>
         <transend idref="ID1412470211"/>
         <placeend idref="ID1412476541"/>
         <annot id="ID1412479918">
-          <posattr x="-468.500000"
-                   y="492.000000"/>
+          <posattr x="-510.500000"
+                   y="496.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -1952,7 +1995,7 @@ airspace out</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="4.0.1">2`k</text>
+                version="4.0.1">k</text>
         </annot>
       </arc>
       <arc id="ID1412489870"
@@ -2101,7 +2144,7 @@ airspace out</text>
         <transend idref="ID1412489864"/>
         <placeend idref="ID1412596513"/>
         <annot id="ID1412598405">
-          <posattr x="-65.000000"
+          <posattr x="-54.500000"
                    y="358.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
@@ -2112,7 +2155,7 @@ airspace out</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="4.0.1"/>
+                version="4.0.1">k</text>
         </annot>
       </arc>
       <arc id="ID1412599360"
@@ -2197,8 +2240,8 @@ airspace out</text>
         <transend idref="ID1412604122"/>
         <placeend idref="ID1412366534"/>
         <annot id="ID1412607041">
-          <posattr x="190.500000"
-                   y="285.000000"/>
+          <posattr x="192.500000"
+                   y="284.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -2261,8 +2304,8 @@ airspace out</text>
         <transend idref="ID1412602203"/>
         <placeend idref="ID1412366549"/>
         <annot id="ID1412609006">
-          <posattr x="204.500000"
-                   y="585.000000"/>
+          <posattr x="203.500000"
+                   y="584.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -2293,8 +2336,72 @@ airspace out</text>
         <transend idref="ID1412470211"/>
         <placeend idref="ID1412366539"/>
         <annot id="ID1412609896">
-          <posattr x="-507.500000"
-                   y="617.000000"/>
+          <posattr x="-538.500000"
+                   y="612.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.1">k</text>
+        </annot>
+      </arc>
+      <arc id="ID1412625594"
+           orientation="PtoT"
+           order="1">
+        <posattr x="0.000000"
+                 y="0.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <arrowattr headsize="1.200000"
+                   currentcyckle="2"/>
+        <transend idref="ID1412624571"/>
+        <placeend idref="ID1412366544"/>
+        <annot id="ID1412625595">
+          <posattr x="-412.500000"
+                   y="611.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.1">k</text>
+        </annot>
+      </arc>
+      <arc id="ID1412625814"
+           orientation="TtoP"
+           order="1">
+        <posattr x="0.000000"
+                 y="0.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <arrowattr headsize="1.200000"
+                   currentcyckle="2"/>
+        <transend idref="ID1412624571"/>
+        <placeend idref="ID1412476541"/>
+        <annot id="ID1412625815">
+          <posattr x="-441.500000"
+                   y="481.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -2349,7 +2456,7 @@ for landing</text>
           <text tool="CPN Tools"
                 version="4.0.1">PLANE</text>
         </type>
-        <initmark id="ID1412489884">
+        <initmark id="ID1412619586">
           <posattr x="-620.000000"
                    y="327.000000"/>
           <fillattr colour="White"
@@ -3486,8 +3593,8 @@ on runway</text>
             </zorder>
           </cpnsheet>
           <cpnsheet id="ID1412367474"
-                    panx="122.000000"
-                    pany="518.000000"
+                    panx="118.000000"
+                    pany="516.000000"
                     zoom="1.000000"
                     instance="ID1412366571">
             <zorder>
@@ -3496,14 +3603,14 @@ on runway</text>
           </cpnsheet>
         </sheets>
         <zorder>
-          <position value="4"/>
-          <position value="3"/>
           <position value="0"/>
           <position value="1"/>
           <position value="2"/>
-          <position value="6"/>
+          <position value="3"/>
+          <position value="4"/>
           <position value="7"/>
           <position value="8"/>
+          <position value="6"/>
           <position value="5"/>
         </zorder>
       </cpnbinder>
@@ -3511,7 +3618,7 @@ on runway</text>
     <monitorblock name="Monitors"/>
     <IndexNode expanded="true">
       <IndexNode expanded="true"/>
-      <IndexNode expanded="false"/>
+      <IndexNode expanded="true"/>
       <IndexNode expanded="false">
         <IndexNode expanded="false"/>
         <IndexNode expanded="false"/>
@@ -3584,7 +3691,9 @@ on runway</text>
           <IndexNode expanded="false"/>
         </IndexNode>
       </IndexNode>
-      <IndexNode expanded="false"/>
+      <IndexNode expanded="false">
+        <IndexNode expanded="false"/>
+      </IndexNode>
       <IndexNode expanded="true">
         <IndexNode expanded="false">
           <IndexNode expanded="true"/>
