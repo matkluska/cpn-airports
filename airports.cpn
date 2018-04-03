@@ -53,22 +53,53 @@
           <id>STRING</id>
           <string/>
         </color>
+        <color id="ID1412626715">
+          <id>SIZE</id>
+          <int>
+            <with>
+              <ml>1</ml>
+              <ml>10</ml>
+            </with>
+          </int>
+          <layout>colset SIZE = int with 1..10;</layout>
+        </color>
+        <color id="ID1412626812">
+          <id>PRIORITY</id>
+          <int>
+            <with>
+              <ml>1</ml>
+              <ml>5</ml>
+            </with>
+          </int>
+          <layout>colset PRIORITY = int with 1..5;</layout>
+        </color>
+        <color id="ID1412627735">
+          <id>PRIORITYxSIZE</id>
+          <timed/>
+          <product>
+            <id>PRIORITY</id>
+            <id>SIZE</id>
+          </product>
+          <layout>colset PRIORITYxSIZE = product PRIORITY*SIZE timed;</layout>
+        </color>
         <color id="ID1412611231">
           <id>PLANE</id>
+          <timed/>
           <product>
-            <id>INT</id>
+            <id>PRIORITY</id>
+            <id>SIZE</id>
             <id>STRING</id>
           </product>
-          <layout>colset PLANE=product INT*STRING;</layout>
+          <layout>colset PLANE=product PRIORITY*SIZE*STRING timed;</layout>
         </color>
-        <ml id="ID1412372075">val initJFK=4`(1,&quot;JFK&quot;)
-          <layout>val initJFK=4`(1,&quot;JFK&quot;)</layout>
+        <ml id="ID1412372075">val initJFK=4`(1,1,&quot;JFK&quot;)
+          <layout>val initJFK=4`(1,1,&quot;JFK&quot;)</layout>
         </ml>
-        <ml id="ID1412371735">val initKRK=6`(1, &quot;KRK&quot;);
-          <layout>val initKRK=6`(1, &quot;KRK&quot;);</layout>
+        <ml id="ID1412371735">val initKRK=6`(1, 1,&quot;KRK&quot;);
+          <layout>val initKRK=6`(1, 1,&quot;KRK&quot;);</layout>
         </ml>
-        <ml id="ID1412373805">val initTKY=3`(1,&quot;TKY&quot;);
-          <layout>val initTKY=3`(1,&quot;TKY&quot;);</layout>
+        <ml id="ID1412373805">val initTKY=3`(1,1,&quot;TKY&quot;);
+          <layout>val initTKY=3`(1,1,&quot;TKY&quot;);</layout>
         </ml>
         <var id="ID1412417833">
           <type>
@@ -85,7 +116,9 @@
           </type>
           <id>i</id>
           <id>j</id>
-          <layout>var i,j:INT;</layout>
+          <id>p1</id>
+          <id>s1</id>
+          <layout>var i,j,p1,s1:INT;</layout>
         </var>
         <var id="ID1412617093">
           <type>
@@ -517,7 +550,7 @@
         <box w="93.000000"
              h="40.000000"/>
         <subst subpage="ID1412366526"
-               portsock="(ID1412366534,ID1412362285)(ID1412366539,ID1412362552)(ID1412366544,ID1412362202)(ID1412366549,ID1412353382)">
+               portsock="(ID1412366534,ID1412362285)(ID1412366544,ID1412362202)(ID1412366549,ID1412353382)(ID1412366539,ID1412362552)">
           <subpageinfo id="ID1412366570"
                        name="Airport">
             <posattr x="0.000000"
@@ -1519,7 +1552,7 @@ airspace in</text>
                 version="4.0.1"/>
         </cond>
         <time id="ID1412470213">
-          <posattr x="-487.500000"
+          <posattr x="-483.500000"
                    y="574.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
@@ -1530,7 +1563,7 @@ airspace in</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="4.0.1"/>
+                version="4.0.1">@+1</text>
         </time>
         <code id="ID1412470214">
           <posattr x="-467.500000"
@@ -1773,7 +1806,7 @@ airspace out</text>
           <text tool="CPN Tools"
                 version="4.0.1"/>
         </cond>
-        <time id="ID1412602205">
+        <time id="ID1412629094">
           <posattr x="183.500000"
                    y="577.000000"/>
           <fillattr colour="White"
@@ -1848,7 +1881,7 @@ airspace out</text>
           <text tool="CPN Tools"
                 version="4.0.1"/>
         </cond>
-        <time id="ID1412604124">
+        <time id="ID1412629101">
           <posattr x="186.500000"
                    y="325.000000"/>
           <fillattr colour="White"
@@ -1924,7 +1957,7 @@ airspace in</text>
                 version="4.0.1"/>
         </cond>
         <time id="ID1412624573">
-          <posattr x="-361.500000"
+          <posattr x="-357.500000"
                    y="574.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
@@ -1935,7 +1968,7 @@ airspace in</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="4.0.1"/>
+                version="4.0.1">@+1</text>
         </time>
         <code id="ID1412624574">
           <posattr x="-341.500000"
@@ -1984,8 +2017,8 @@ airspace in</text>
         <transend idref="ID1412470211"/>
         <placeend idref="ID1412476541"/>
         <annot id="ID1412479918">
-          <posattr x="-510.500000"
-                   y="496.000000"/>
+          <posattr x="-511.500000"
+                   y="500.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -2240,7 +2273,7 @@ airspace in</text>
         <transend idref="ID1412604122"/>
         <placeend idref="ID1412366534"/>
         <annot id="ID1412607041">
-          <posattr x="192.500000"
+          <posattr x="202.500000"
                    y="284.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
@@ -2251,7 +2284,7 @@ airspace in</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="4.0.1">k</text>
+                version="4.0.1">k@0</text>
         </annot>
       </arc>
       <arc id="ID1412608021"
@@ -2304,7 +2337,7 @@ airspace in</text>
         <transend idref="ID1412602203"/>
         <placeend idref="ID1412366549"/>
         <annot id="ID1412609006">
-          <posattr x="203.500000"
+          <posattr x="193.500000"
                    y="584.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
@@ -2315,7 +2348,7 @@ airspace in</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="4.0.1">k</text>
+                version="4.0.1">k@0</text>
         </annot>
       </arc>
       <arc id="ID1412609895"
@@ -2400,8 +2433,8 @@ airspace in</text>
         <transend idref="ID1412624571"/>
         <placeend idref="ID1412476541"/>
         <annot id="ID1412625815">
-          <posattr x="-441.500000"
-                   y="481.000000"/>
+          <posattr x="-440.500000"
+                   y="482.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -2773,7 +2806,7 @@ on runway</text>
                 version="4.0.1"/>
         </cond>
         <time id="ID1412519117">
-          <posattr x="4.500000"
+          <posattr x="12.500000"
                    y="177.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
@@ -2784,7 +2817,7 @@ on runway</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="4.0.1"/>
+                version="4.0.1">@+10</text>
         </time>
         <code id="ID1412519118">
           <posattr x="24.500000"
@@ -3268,21 +3301,6 @@ on runway</text>
           <text>&lt;same as model&gt;</text>
         </value>
       </option>
-      <option name="extensions.10001.enable">
-        <value>
-          <boolean>true</boolean>
-        </value>
-      </option>
-      <option name="extensions.10007.enable">
-        <value>
-          <boolean>true</boolean>
-        </value>
-      </option>
-      <option name="extensions.10003.enable">
-        <value>
-          <boolean>true</boolean>
-        </value>
-      </option>
       <option name="extensions.10004.enable">
         <value>
           <boolean>true</boolean>
@@ -3293,7 +3311,27 @@ on runway</text>
           <boolean>true</boolean>
         </value>
       </option>
+      <option name="extensions.10003.enable">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
       <option name="extensions.10005.enable">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="extensions.10007.enable">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="extensions.10001.enable">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="extensions.10006.enable">
         <value>
           <boolean>true</boolean>
         </value>
@@ -3304,11 +3342,6 @@ on runway</text>
         </value>
       </option>
       <option name="extensions.10008.enable">
-        <value>
-          <boolean>true</boolean>
-        </value>
-      </option>
-      <option name="extensions.10006.enable">
         <value>
           <boolean>true</boolean>
         </value>
@@ -3521,8 +3554,8 @@ on runway</text>
     </options>
     <binders>
       <cpnbinder id="ID2222"
-                 x="351"
-                 y="54"
+                 x="545"
+                 y="34"
                  width="1173"
                  height="769">
         <sheets>
@@ -3608,10 +3641,10 @@ on runway</text>
           <position value="2"/>
           <position value="3"/>
           <position value="4"/>
+          <position value="5"/>
+          <position value="6"/>
           <position value="7"/>
           <position value="8"/>
-          <position value="6"/>
-          <position value="5"/>
         </zorder>
       </cpnbinder>
     </binders>
@@ -3691,9 +3724,7 @@ on runway</text>
           <IndexNode expanded="false"/>
         </IndexNode>
       </IndexNode>
-      <IndexNode expanded="false">
-        <IndexNode expanded="false"/>
-      </IndexNode>
+      <IndexNode expanded="false"/>
       <IndexNode expanded="true">
         <IndexNode expanded="false">
           <IndexNode expanded="true"/>
@@ -3711,7 +3742,10 @@ on runway</text>
           <IndexNode expanded="true"/>
           <IndexNode expanded="true"/>
           <IndexNode expanded="true"/>
-          <IndexNode expanded="false"/>
+          <IndexNode expanded="true"/>
+          <IndexNode expanded="true"/>
+          <IndexNode expanded="true"/>
+          <IndexNode expanded="true"/>
           <IndexNode expanded="true"/>
           <IndexNode expanded="true"/>
           <IndexNode expanded="true"/>
