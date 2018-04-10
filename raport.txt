@@ -1,0 +1,320 @@
+CPN Tools state space report for:
+/cygdrive/C/Users/mateu/Documents/Projekty/cpn-airports/airports.cpn
+Report generated: Tue Apr 10 20:56:50 2018
+
+
+ Statistics
+------------------------------------------------------------------------
+
+  State Space
+     Nodes:  21943
+     Arcs:   72730
+     Secs:   22
+     Status: Full
+
+  Scc Graph
+     Nodes:  21943
+     Arcs:   72730
+     Secs:   0
+
+
+ Boundedness Properties
+------------------------------------------------------------------------
+
+  Best Integer Bounds
+                             Upper      Lower
+     Airpoirts'JFK_KRK 1     2          0
+     Airpoirts'JFK_TKY 1     2          0
+     Airpoirts'KRK_JFK 1     2          0
+     Airpoirts'KRK_TKY 1     2          0
+     Airpoirts'TKY_JFK 1     2          0
+     Airpoirts'TKY_KRK 1     2          0
+     Airport'Hangar 1        2          0
+     Airport'Hangar 2        2          0
+     Airport'Hangar 3        2          0
+     Airport'In_air 1        2          0
+     Airport'In_air 2        2          0
+     Airport'In_air 3        2          0
+     Airport'Planes_waiting_for_landing 1
+                             2          0
+     Airport'Planes_waiting_for_landing 2
+                             2          0
+     Airport'Planes_waiting_for_landing 3
+                             2          0
+     Airport'Service 1       2          0
+     Airport'Service 2       2          0
+     Airport'Service 3       2          0
+     Runway'Runway 1         2          0
+     Runway'Runway 2         2          0
+     Runway'Runway 3         2          0
+     Runway'Runway 4         2          0
+     Runway'Runway 5         2          0
+     Runway'Runway 6         2          0
+
+  Best Upper Multi-set Bounds
+     Airpoirts'JFK_KRK 1 2`(0,"JFK")++
+2`(1,"JFK")++
+2`(2,"JFK")++
+2`(3,"JFK")++
+2`(4,"JFK")++
+2`(5,"JFK")++
+2`(6,"JFK")++
+2`(7,"JFK")++
+2`(8,"JFK")++
+2`(9,"JFK")
+     Airpoirts'JFK_TKY 1 2`(0,"JFK")++
+2`(1,"JFK")++
+2`(2,"JFK")++
+2`(3,"JFK")++
+2`(4,"JFK")++
+2`(5,"JFK")++
+2`(6,"JFK")++
+2`(7,"JFK")++
+2`(8,"JFK")++
+2`(9,"JFK")
+     Airpoirts'KRK_JFK 1 2`(0,"JFK")++
+2`(1,"JFK")++
+2`(2,"JFK")++
+2`(3,"JFK")++
+2`(4,"JFK")++
+2`(5,"JFK")++
+2`(6,"JFK")++
+2`(7,"JFK")++
+2`(8,"JFK")++
+1`(10,"JFK")
+     Airpoirts'KRK_TKY 1 2`(0,"JFK")++
+2`(1,"JFK")++
+2`(2,"JFK")++
+2`(3,"JFK")++
+2`(4,"JFK")++
+2`(5,"JFK")++
+2`(6,"JFK")++
+2`(7,"JFK")++
+2`(8,"JFK")
+     Airpoirts'TKY_JFK 1 2`(0,"JFK")++
+2`(1,"JFK")++
+2`(2,"JFK")++
+2`(3,"JFK")++
+2`(4,"JFK")++
+2`(5,"JFK")++
+2`(6,"JFK")++
+2`(7,"JFK")++
+2`(8,"JFK")++
+1`(10,"JFK")
+     Airpoirts'TKY_KRK 1 2`(0,"JFK")++
+2`(1,"JFK")++
+2`(2,"JFK")++
+2`(3,"JFK")++
+2`(4,"JFK")++
+2`(5,"JFK")++
+2`(6,"JFK")++
+2`(7,"JFK")++
+2`(8,"JFK")
+     Airport'Hangar 1    2`(0,"JFK")
+     Airport'Hangar 2    2`(0,"JFK")
+     Airport'Hangar 3    2`(0,"JFK")
+     Airport'In_air 1    2`(0,"JFK")++
+2`(1,"JFK")++
+2`(2,"JFK")++
+2`(3,"JFK")++
+2`(4,"JFK")++
+2`(5,"JFK")++
+2`(6,"JFK")++
+2`(7,"JFK")++
+2`(8,"JFK")
+     Airport'In_air 2    2`(0,"JFK")++
+2`(1,"JFK")++
+2`(2,"JFK")++
+2`(3,"JFK")++
+2`(4,"JFK")++
+2`(5,"JFK")++
+2`(6,"JFK")++
+2`(7,"JFK")++
+2`(8,"JFK")++
+2`(9,"JFK")
+     Airport'In_air 3    2`(0,"JFK")++
+2`(1,"JFK")++
+2`(2,"JFK")++
+2`(3,"JFK")++
+2`(4,"JFK")++
+2`(5,"JFK")++
+2`(6,"JFK")++
+2`(7,"JFK")++
+2`(8,"JFK")
+     Airport'Planes_waiting_for_landing 1
+                         2`(0,"JFK")++
+2`(1,"JFK")++
+2`(2,"JFK")++
+2`(3,"JFK")++
+2`(4,"JFK")++
+2`(5,"JFK")++
+2`(6,"JFK")++
+2`(7,"JFK")++
+2`(8,"JFK")++
+2`(9,"JFK")
+     Airport'Planes_waiting_for_landing 2
+                         2`(0,"JFK")++
+2`(1,"JFK")++
+2`(2,"JFK")++
+2`(3,"JFK")++
+2`(4,"JFK")++
+2`(5,"JFK")++
+2`(6,"JFK")++
+2`(7,"JFK")++
+2`(8,"JFK")++
+2`(10,"JFK")
+     Airport'Planes_waiting_for_landing 3
+                         2`(0,"JFK")++
+2`(1,"JFK")++
+2`(2,"JFK")++
+2`(3,"JFK")++
+2`(4,"JFK")++
+2`(5,"JFK")++
+2`(6,"JFK")++
+2`(7,"JFK")++
+2`(8,"JFK")++
+2`(9,"JFK")
+     Airport'Service 1   2`(0,"JFK")++
+2`(1,"JFK")++
+2`(2,"JFK")++
+2`(3,"JFK")++
+2`(4,"JFK")++
+2`(5,"JFK")++
+2`(6,"JFK")++
+2`(7,"JFK")++
+2`(8,"JFK")
+     Airport'Service 2   2`(0,"JFK")++
+2`(1,"JFK")++
+2`(2,"JFK")++
+2`(3,"JFK")++
+2`(4,"JFK")++
+2`(5,"JFK")++
+2`(6,"JFK")++
+2`(7,"JFK")++
+2`(8,"JFK")++
+2`(9,"JFK")
+     Airport'Service 3   2`(0,"JFK")++
+2`(1,"JFK")++
+2`(2,"JFK")++
+2`(3,"JFK")++
+2`(4,"JFK")++
+2`(5,"JFK")++
+2`(6,"JFK")++
+2`(7,"JFK")++
+2`(8,"JFK")
+     Runway'Runway 1     2`(0,"JFK")++
+2`(1,"JFK")++
+2`(2,"JFK")++
+2`(3,"JFK")++
+2`(4,"JFK")++
+2`(5,"JFK")++
+2`(6,"JFK")++
+2`(7,"JFK")++
+2`(8,"JFK")++
+2`(9,"JFK")
+     Runway'Runway 2     2`(0,"JFK")++
+2`(1,"JFK")++
+2`(2,"JFK")++
+2`(3,"JFK")++
+2`(4,"JFK")++
+2`(5,"JFK")++
+2`(6,"JFK")++
+2`(7,"JFK")++
+2`(8,"JFK")++
+2`(9,"JFK")++
+2`(10,"JFK")
+     Runway'Runway 3     2`(0,"JFK")++
+2`(1,"JFK")++
+2`(2,"JFK")++
+2`(3,"JFK")++
+2`(4,"JFK")++
+2`(5,"JFK")++
+2`(6,"JFK")++
+2`(7,"JFK")++
+2`(8,"JFK")++
+2`(9,"JFK")
+     Runway'Runway 4     2`(0,"JFK")++
+2`(1,"JFK")++
+2`(2,"JFK")++
+2`(3,"JFK")++
+2`(4,"JFK")++
+2`(5,"JFK")++
+2`(6,"JFK")++
+2`(7,"JFK")++
+2`(8,"JFK")++
+2`(9,"JFK")
+     Runway'Runway 5     2`(0,"JFK")++
+2`(1,"JFK")++
+2`(2,"JFK")++
+2`(3,"JFK")++
+2`(4,"JFK")++
+2`(5,"JFK")++
+2`(6,"JFK")++
+2`(7,"JFK")++
+2`(8,"JFK")++
+2`(9,"JFK")++
+2`(10,"JFK")
+     Runway'Runway 6     2`(0,"JFK")++
+2`(1,"JFK")++
+2`(2,"JFK")++
+2`(3,"JFK")++
+2`(4,"JFK")++
+2`(5,"JFK")++
+2`(6,"JFK")++
+2`(7,"JFK")++
+2`(8,"JFK")++
+2`(9,"JFK")
+
+  Best Lower Multi-set Bounds
+     Airpoirts'JFK_KRK 1 empty
+     Airpoirts'JFK_TKY 1 empty
+     Airpoirts'KRK_JFK 1 empty
+     Airpoirts'KRK_TKY 1 empty
+     Airpoirts'TKY_JFK 1 empty
+     Airpoirts'TKY_KRK 1 empty
+     Airport'Hangar 1    empty
+     Airport'Hangar 2    empty
+     Airport'Hangar 3    empty
+     Airport'In_air 1    empty
+     Airport'In_air 2    empty
+     Airport'In_air 3    empty
+     Airport'Planes_waiting_for_landing 1
+                         empty
+     Airport'Planes_waiting_for_landing 2
+                         empty
+     Airport'Planes_waiting_for_landing 3
+                         empty
+     Airport'Service 1   empty
+     Airport'Service 2   empty
+     Airport'Service 3   empty
+     Runway'Runway 1     empty
+     Runway'Runway 2     empty
+     Runway'Runway 3     empty
+     Runway'Runway 4     empty
+     Runway'Runway 5     empty
+     Runway'Runway 6     empty
+
+
+ Home Properties
+------------------------------------------------------------------------
+
+  Home Markings
+     None
+
+
+ Liveness Properties
+------------------------------------------------------------------------
+
+  Dead Markings
+     6 [21943,21942,21940,21910,21898,...]
+
+  Dead Transition Instances
+     None
+
+  Live Transition Instances
+     None
+
+
+ Fairness Properties
+------------------------------------------------------------------------
+     No infinite occurrence sequences.
